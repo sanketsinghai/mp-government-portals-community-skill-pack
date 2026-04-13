@@ -1,29 +1,73 @@
-<<<<<<< HEAD
-# mp-government-portals-community-skill-pack
-Community-maintained cross-agent knowledge pack for official Madhya Pradesh government portals, compatible with Copilot, Claude, Claude Code, and GPT-style assistants
-=======
-# MP Government Portals Skill Pack
+# MP Government Portals Community Skill Pack
 
-A cross-agent knowledge pack for finding official Madhya Pradesh government portals.
-
-This repository contains a curated directory of 269+ official MP government websites and service portals, packaged so it can be reused in GitHub Copilot, Claude, Claude Code, and GPT-style assistants.
+Community-maintained cross-agent knowledge pack for discovering official Madhya Pradesh government portals.
 
 ## Important Disclaimer
 
-This repository is **not an official Madhya Pradesh Government project** and is **not maintained by the MP Government**.
+> This repository is **not an official Madhya Pradesh Government project** and is **not maintained by the MP Government**.
+> It is a community-maintained routing and reference pack that links to official public portals.
 
-It is a community-maintained reference and skill pack that points users to official public government portals. For authoritative information, policy interpretation, application status, or service decisions, rely on the relevant official government website or department.
+## Why This Project Exists
 
-## What is included
+People often know the service they need, but not the exact official portal.
+This project organizes 269+ MP government portals into clear categories so citizens, developers, and researchers can quickly find the right official URL.
 
-  - `.github/skills/mp-government-portals/`
-  - `.claude/skills/mp-government-portals/`
-  - `.agents/skills/mp-government-portals/`
+## Highlights
 
-## Primary use cases
+- 55 district collector portal references
+- 45+ department portal references
+- e-governance services: Bhulekh, MPOnline, tenders, scholarships, grievances
+- utilities: electricity, water, transport
+- cross-agent compatibility: Copilot, Claude, Claude Code, GPT-style assistants
 
+## Quick Start
 
-## Repository structure
+### Use it as a reference on GitHub
+
+Start with:
+
+- `references/egovernance.md`
+- `references/districts.md`
+- `references/departments.md`
+- `references/utilities.md`
+
+### Install for GitHub Copilot
+
+```bash
+mkdir -p ~/.copilot/skills
+cp -R .github/skills/mp-government-portals ~/.copilot/skills/
+```
+
+### Install for Claude / Claude Code
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R .claude/skills/mp-government-portals ~/.claude/skills/
+```
+
+### Install for agents using `.agents/skills`
+
+```bash
+mkdir -p ~/.agents/skills
+cp -R .agents/skills/mp-government-portals ~/.agents/skills/
+```
+
+### Use with GPT-style assistants
+
+1. Create a custom GPT/project.
+2. Paste `gpt/system-prompt.md` into system instructions.
+3. Upload `SKILL.md` and all files from `references/`.
+4. Validate with test prompts from `gpt/SETUP.md`.
+
+## Example Prompts
+
+- How do I check MP land records?
+- Find the collector portal for Indore district.
+- Where can I pay MP electricity bills?
+- Which portal is used for MPPSC?
+- Show official MP scholarship portals.
+
+## Repository Structure
 
 ```text
 .
@@ -34,85 +78,33 @@ It is a community-maintained reference and skill pack that points users to offic
 ├── .agents/skills/mp-government-portals/
 ├── gpt/
 ├── CONTRIBUTING.md
-└── MAINTENANCE.md
+├── MAINTENANCE.md
+└── CLAUDE.md
 ```
-
-## How to use
-
-### 1. Browse on GitHub
-
-You can use this repository directly as a maintained reference directory of MP government portals.
-
-Start with these files:
-
-### 2. Install in GitHub Copilot / VS Code
-
-Copy the prepared skill folder into your personal Copilot skills directory:
-
-```bash
-mkdir -p ~/.copilot/skills
-cp -R .github/skills/mp-government-portals ~/.copilot/skills/
-```
-
-Project-local use is also possible:
-
-```bash
-mkdir -p your-project/.github/skills
-cp -R .github/skills/mp-government-portals your-project/.github/skills/
-```
-
-After that, ask questions such as:
-
-### 3. Install in Claude or Claude Code
-
-Copy the Claude wrapper into your personal Claude skills directory:
-
-```bash
-mkdir -p ~/.claude/skills
-cp -R .claude/skills/mp-government-portals ~/.claude/skills/
-```
-
-If you work with another agent runner that supports `.agents/skills`, use:
-
-```bash
-mkdir -p ~/.agents/skills
-cp -R .agents/skills/mp-government-portals ~/.agents/skills/
-```
-
-If you open this repository directly in Claude Code, the root `CLAUDE.md` provides a lightweight entry point.
-
-### 4. Use in GPT-style assistants
-
-There is no single universal local skill folder for GPT products, so the normal pattern is:
-
-1. Create a custom GPT, project, or assistant.
-2. Paste the contents of `gpt/system-prompt.md` into the system instructions.
-3. Upload the files from `references/` as knowledge files.
-4. Optionally also upload `SKILL.md` for the topic map and response rules.
-
-Detailed setup notes are in `gpt/SETUP.md`.
-
-## Example prompts
-
-Citizen-facing examples:
-
-Developer and researcher examples:
 
 ## Scope
 
-Included in v1:
+Included:
 
-Not included in v1:
+- Official MP portal references by category
+- Multi-agent packaging for practical reuse
+- Contributor and maintenance documentation
 
-## Data quality
+Not included:
 
-This repository is curated from official public government websites. Portal locations can change over time. Verify important URLs before operational use and report outdated links through issues or pull requests.
+- Automated scraping or uptime monitoring
+- Legal/policy interpretation
+- Unofficial or commercial portal directories
 
-## License
+## Data Quality
 
-This repository is licensed under the MIT License. See `LICENSE`.
+URLs are curated from official public government websites. Since portals can move or change, verify important links before critical use and report broken links via issues or pull requests.
 
 ## Contributing
 
-See `CONTRIBUTING.md` for portal update rules and contribution expectations.
->>>>>>> 75fcd7f (Initial cross-agent MP government portals skill pack)
+Contributions are welcome for broken links, missing portals, and categorization improvements.
+See `CONTRIBUTING.md`.
+
+## License
+
+MIT License. See `LICENSE`.
