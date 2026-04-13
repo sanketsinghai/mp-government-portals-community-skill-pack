@@ -8,6 +8,12 @@ A cross-agent knowledge pack for finding official Madhya Pradesh government port
 
 This repository contains a curated directory of 269+ official MP government websites and service portals, packaged so it can be reused in GitHub Copilot, Claude, Claude Code, and GPT-style assistants.
 
+## Important Disclaimer
+
+This repository is **not an official Madhya Pradesh Government project** and is **not maintained by the MP Government**.
+
+It is a community-maintained reference and skill pack that points users to official public government portals. For authoritative information, policy interpretation, application status, or service decisions, rely on the relevant official government website or department.
+
 ## What is included
 
   - `.github/skills/mp-government-portals/`

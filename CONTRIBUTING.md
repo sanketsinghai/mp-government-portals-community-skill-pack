@@ -1,5 +1,7 @@
 # Contributing
 
+This is a community-maintained repository. It is not affiliated with or maintained by the Madhya Pradesh Government.
+
 ## What to contribute
 
 Contributions are welcome for:

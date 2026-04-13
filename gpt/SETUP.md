@@ -4,6 +4,10 @@
 
 Use this repository as a knowledge pack for ChatGPT or another GPT-style assistant.
 
+## Disclaimer
+
+This repository is **not official** and is **not maintained by the Madhya Pradesh Government**. The assistant should use it to route users to official public portals, not to present itself as a government service.
+
 ## Recommended setup
 
 1. Create a custom GPT, project, or assistant.
